@@ -15,3 +15,4 @@ class PreviousWorkout{
 		self.weight = weight;
 	}
 }
+oldWorkout = previousWorkout(date: Date.distantPast, muscleGroupID: "Biceps", sets: 20, reps: 5, weight: 30.0);
