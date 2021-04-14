@@ -39,7 +39,18 @@ class MuscleList{
 		self.forearmList = forearmList;
 		self.backList = backList;
 	}
-	
+	sampleList = MuscleList(
+		bicepList: ["curls", "pushups", "placeholder"],
+		tricepList: ["diamond pushups", "fill here", "idk"],
+		pectoralList: ["todo"],
+		hamstringList: ["leg curl", "glute raise", "I honestly got these off wikipedia"],
+		quadricepList: ["todo"],
+		calfList: ["calf raises", "stair calves"]
+		serratusList: ["I don't know this is a really f**ing obscure muscle group"],
+		abdominalList: ["situps", "hip risers", "planks"],
+		forearmList: ["how are these different from biceps and triceps"],
+		backList: ["Why would you work out the most vulnerable muscle in your body"]
+	)
 	
 	
 }
