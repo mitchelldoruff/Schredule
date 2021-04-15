@@ -15,6 +15,7 @@
 		7427EE3C262682CC001FCF4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7427EE3A262682CC001FCF4A /* LaunchScreen.storyboard */; };
 		7427EE47262682CC001FCF4A /* SchreduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7427EE46262682CC001FCF4A /* SchreduleTests.swift */; };
 		7427EE52262682CC001FCF4A /* SchreduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7427EE51262682CC001FCF4A /* SchreduleUITests.swift */; };
+		7427EE6E262898C6001FCF4A /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7427EE6D262898C6001FCF4A /* ModelController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		7427EE4D262682CC001FCF4A /* SchreduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchreduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7427EE51262682CC001FCF4A /* SchreduleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchreduleUITests.swift; sourceTree = "<group>"; };
 		7427EE53262682CC001FCF4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7427EE6D262898C6001FCF4A /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			children = (
 				7427EE2F262682C6001FCF4A /* AppDelegate.swift */,
 				7427EE31262682C6001FCF4A /* SceneDelegate.swift */,
+				7427EE6D262898C6001FCF4A /* ModelController.swift */,
 				7427EE33262682C6001FCF4A /* ViewController.swift */,
 				7427EE35262682C6001FCF4A /* Main.storyboard */,
 				7427EE38262682CC001FCF4A /* Assets.xcassets */,
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7427EE34262682C6001FCF4A /* ViewController.swift in Sources */,
+				7427EE6E262898C6001FCF4A /* ModelController.swift in Sources */,
 				7427EE30262682C6001FCF4A /* AppDelegate.swift in Sources */,
 				7427EE32262682C6001FCF4A /* SceneDelegate.swift in Sources */,
 			);
