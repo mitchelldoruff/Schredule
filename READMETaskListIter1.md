@@ -22,15 +22,15 @@ Josephine:
 StoryBoard//
 
 Workout lists: 
-bicepList: [String] :
-tricepList: [String] :
-pectoralList: [String] :
-hamstringList: [String] :
-quadracepList: [String] :
-calfList: [String] :
-serratus: [String] :
-trapsList: [String] :
-shouldersList: [String] :
-forearmList: [String] :
-abdominalList: [String] :
-backList: [String] :
+bicepList: [String] : Strict Bicep bar curl, Bicep dumbell Curl, Incline Curl
+tricepList: [String] : Dip, Tricep Pulldown, Tricep single dumbell extension
+pectoralList: [String] : Bench Press, Cable Flies, Incline Dumbell Press
+hamstringList: [String] : Deadlift, Hamstring Curl, Romanian Deadlift
+quadracepList: [String] : Squat, Leg Press, Leg extension
+calfList: [String] : Seated Calf raise, Standing Calf Raise, Straight Leg Calf Extension
+serratus: [String] : Dumbell Pull Over, Straight Bar Push Down, Rack Pull
+trapsList: [String] : Upright Row, Barbell Shrug, Dumbell Shrug
+shouldersList: [String] : Standing Dumbell Shoulder Press, Seated Shoulder Press, Lateral Dumbell Raise
+forearmList: [String] : Wrist Curl, Pull up, Plate Walk
+abdominalList: [String] : Hanging leg raise, Cable Crunch, Lever
+backList: [String] : Seated Machine Row, Machine High Row, Lat Pull Down
