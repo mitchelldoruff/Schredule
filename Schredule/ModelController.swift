@@ -9,10 +9,10 @@ import Foundation
 
 class ModelController {
     //https://developer.apple.com/documentation/foundation/date
-    var exerciseList: MuscleList!
-    var pastWorkouts: PreviousWorkouts!
-    var date: NSDate
-    var stressLevel: StressController!
+    //var exerciseList: MuscleList!
+    //var pastWorkouts: PreviousWorkouts!
+    var date: NSDate = NSDate()
+    //var stressLevel: StressController!
     
     func muscleGroupStress() {
         
@@ -26,5 +26,5 @@ class ModelController {
         
     }
     
-    init () {}
+    //init () {}
 }
