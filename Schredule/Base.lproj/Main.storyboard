@@ -60,10 +60,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="85.714285714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Progress Controller-->
         <scene sceneID="KQq-tV-byK">
             <objects>
-                <viewController id="sSQ-9W-Bun" sceneMemberID="viewController">
+                <viewController id="sSQ-9W-Bun" customClass="ProgressController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CNf-ER-Run">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
