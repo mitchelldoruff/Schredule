@@ -1,5 +1,5 @@
 //
-//  ProgressController.swift
+//  HomepageViewController.swift
 //  Schredule
 //
 //  Created by Mitchell Doruff on 4/15/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProgressController: UIViewController {
+class HomepageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
