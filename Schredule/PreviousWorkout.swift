@@ -5,6 +5,7 @@ class PreviousWorkout : Model{
 	var sets: Int;
 	var reps: Int;
 	var weight: Double;
+    
 	init(date: Date, exerciseID: String, muscleGroupID: String, sets: Int, reps: Int,
 	weight: Double){
 		self.date = date;
