@@ -1,4 +1,4 @@
-class PreviousWorkout{
+class PreviousWorkout : Model{
 	var date: Date;
 	var exerciseID: String;
 	var muscleGroupID: String;
