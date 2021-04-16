@@ -16,6 +16,7 @@ class MuscleTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "MuscleCell")
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -33,16 +34,21 @@ class MuscleTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        print( "tableView numberOfRowsInSection: \(section)")
         if ( section == 0) {
+            print("Row Count \(mL.muscleGroup.count)")
             return mL.muscleGroup.count
         }
-        return 0
+        else {return 0}
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print( "tableview cellForRowAt: \(mL.muscleGroup[indexPath.row])")
         let cell = tableView.dequeueReusableCell(withIdentifier: "MuscleCell", for: indexPath)
+        
         let muscles = mL.muscleGroup[ indexPath.row]
+        print("muscles \(muscles)")
         cell.textLabel?.text = "\(muscles)"
         cell.detailTextLabel?.text = "\(muscles)"
         // Configure the cell...
