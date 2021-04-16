@@ -63,9 +63,9 @@
 		7427EE53262682CC001FCF4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7427EE6D262898C6001FCF4A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		7427EE752628CFBB001FCF4A /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
-		7427EE7A2628D03B001FCF4A /* PreviousWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreviousWorkout.swift; path = "../../../Mobile computing/Schredule/Schredule/PreviousWorkout.swift"; sourceTree = "<group>"; };
-		7427EE7B2628D03B001FCF4A /* Colorcode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colorcode.swift; path = "../../../Mobile computing/Schredule/Schredule/Colorcode.swift"; sourceTree = "<group>"; };
-		7427EE7C2628D03B001FCF4A /* MuscleList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MuscleList.swift; path = "../../../Mobile computing/Schredule/Schredule/MuscleList.swift"; sourceTree = "<group>"; };
+		7427EE7A2628D03B001FCF4A /* PreviousWorkout.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; path = PreviousWorkout.swift; sourceTree = "<group>"; };
+		7427EE7B2628D03B001FCF4A /* Colorcode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colorcode.swift; sourceTree = "<group>"; };
+		7427EE7C2628D03B001FCF4A /* MuscleList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuscleList.swift; sourceTree = "<group>"; };
 		74E1E75D2629496C00236F91 /* MuscleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleViewController.swift; sourceTree = "<group>"; };
 		74E1E7622629499200236F91 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		74E1E767262949AB00236F91 /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
