@@ -1,56 +1,62 @@
 class MuscleList : Model{
 
-	var bicepList: [String];
-	var tricepList: [String];
-	var pectoralList: [String];
-	var hamstringList: [String];
-	var quadricepList: [String];
-	var calfList: [String];
-	var serratusList: [String];
-	var trapsList: [String];
-	var previousWorkoutList: [(Date, String, String, Int, Double)];
-	var abdominalList: [String];
-	var forearmList: [String];
-	var backList: [String];
-	
-	
-	init(bicepList: [String],
-	tricepList: [String],
-	pectoralList: [String],
-	hamstringList: [String],
-	quadricepList: [String],
-	calfList: [String],
-	serratusList: [String],
-	trapsList: [String],
-	previousWorkoutList: [(Date, String, String, Int, Double)],
-	abdominalList: [String],
-	forearmList: [String],
-	backList: [String]){
-		self.bicepList = bicepList;
-		self.tricepList = tricepList;
-		self.pectoralList = pectoralList;
-		self.hamstringList = hamstringList;
-		self.quadricepList = quadricepList;
-		self.calfList = calfList;
-		self.serratusList = serratusList;
-		self.trapsList = trapsList;
-		self.previousWorkoutList = previousWorkoutList;
-		self.abdominalList = abdominalList
-		self.forearmList = forearmList;
-		self.backList = backList;
-	}
-	var sampleList = MuscleList(
-		bicepList: ["curls", "pushups", "placeholder"],
-		tricepList: ["diamond pushups", "fill here", "idk"],
-		pectoralList: ["todo"],
-		hamstringList: ["leg curl", "glute raise", "I honestly got these off wikipedia"],
-		quadricepList: ["todo"],
-		calfList: ["calf raises", "stair calves"],
-		serratusList: ["I don't know this is a really f**ing obscure muscle group"],
-		abdominalList: ["situps", "hip risers", "planks"],
-		forearmList: ["how are these different from biceps and triceps"],
-		backList: ["Why would you work out the most vulnerable muscle in your body"]
-	)
+	var bicepList: [String] = ["Strict Bicep bar curl", "Bicep dumbell Curl", "Incline Curl"];
+	var tricepList: [String] = [ "Dip", "Tricep Pulldown", "Tricep single dumbell extension"];
+	var pectoralList: [String] = ["Bench Press", "Cable Flies", "Incline Dumbell Press"];
+	var hamstringList: [String] = ["Deadlift", "Hamstring Curl", "Romanian Deadlift"];
+	var quadricepList: [String] = ["Squat", "Leg Press", "Leg extension"];
+	var calfList: [String] = ["Seated Calf raise", "Standing Calf Raise", "Straight Leg Calf Extension"];
+	var serratusList: [String] = ["Dumbell Pull Over", "Straight Bar Push Down", "Rack Pull"];
+	var trapsList: [String] = ["Upright Row", "Barbell Shrug", "Dumbell Shrug"];
+    var shoulderList: [String] = ["Standing Dumbell Shoulder Press", "Seated Shoulder Press", "Lateral Dumbell Raise"];
+	var abdominalList: [String] = ["Hanging leg raise", "Cable Crunch", "Lever"];
+	var forearmList: [String] = ["Wrist Curl", "Pull up", "Plate Walk"];
+	var backList: [String] = ["Seated Machine Row", "Machine High Row", "Lat Pull Down"];
+    var previousWorkoutList: [(Date, String, String, Int, Double)];
+    
+    public func exerciseList( _ muscleGroup : String ) -> [String] {
+        switch(MuscleGroup) {
+        case "bicep":
+            return bicepList;
+            break;
+        case "tricep":
+            return tricepList;
+            break;
+        case "pectoral":
+            return pectoralList;
+            break;
+        case "hamstring":
+            return hamstringList;
+            break;
+        case "quadricep":
+            return quadricepList;
+            break;
+        case "calf":
+            return calfList;
+            break;
+        case "serratus":
+            return serratusList;
+            break;
+        case "traps":
+            return trapsList;
+            break;
+        case "shoulder":
+            return shoulderList;
+            break;
+        case "abdominal":
+            return abdominalList;
+            break;
+        case "forearm":
+            return forearmList;
+            break;
+        case "back":
+            return backList;
+            break;
+        default:
+            return nul;
+            break;
+        }
+    }
 	
 	
 }
