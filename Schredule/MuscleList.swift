@@ -22,7 +22,7 @@ class MuscleList : Model{
     /// Private instance of hamstring List containing exercises for targeting the hamstring
 	private var _hamstringList: [String] = ["Deadlift", "Hamstring Curl", "Romanian Deadlift"];
     /// A getter fot the hamstringList String Array
-    var hamstring: [String] { get {return self._hamstringList }}
+    var hamstringList: [String] { get {return self._hamstringList }}
     
     /// Private instance of quadricepp List containing exercises for targeting the quadricep
 	private var _quadricepList: [String] = ["Squat", "Leg Press", "Leg extension"];
@@ -64,7 +64,7 @@ class MuscleList : Model{
     /// A getter fot the backList String Array
     var backList: [String] { get {return self._backList}}
     
-    var previousWorkoutList: [(Date, String, String, Int, Double)];
+    //var previousWorkoutList: [(NSDate, String, String, Int, Double)];
     
     public func exerciseList( _ muscleGroup : String ) -> [String] {
         switch(muscleGroup) {
@@ -105,7 +105,7 @@ class MuscleList : Model{
             return backList;
             break;
         default:
-            return nul;
+            return ["noneFound"];
             break;
         }
     }

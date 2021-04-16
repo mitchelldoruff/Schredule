@@ -1,3 +1,4 @@
+/*
 class PreviousWorkout : Model{
 	var date: Date;
 	var exerciseID: String;
@@ -17,3 +18,4 @@ class PreviousWorkout : Model{
 	}
 }
 oldWorkout = previousWorkout(date: Date.distantPast, muscleGroupID: "Biceps", sets: 20, reps: 5, weight: 30.0);
+*/
