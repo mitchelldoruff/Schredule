@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ModelController {
+class Model {
     //https://developer.apple.com/documentation/foundation/date
     //var exerciseList: MuscleList!
     //var pastWorkouts: PreviousWorkouts!
