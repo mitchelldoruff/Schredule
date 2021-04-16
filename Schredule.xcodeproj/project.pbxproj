@@ -15,7 +15,7 @@
 		7427EE3C262682CC001FCF4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7427EE3A262682CC001FCF4A /* LaunchScreen.storyboard */; };
 		7427EE47262682CC001FCF4A /* SchreduleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7427EE46262682CC001FCF4A /* SchreduleTests.swift */; };
 		7427EE52262682CC001FCF4A /* SchreduleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7427EE51262682CC001FCF4A /* SchreduleUITests.swift */; };
-		7427EE6E262898C6001FCF4A /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7427EE6D262898C6001FCF4A /* ModelController.swift */; };
+		7427EE6E262898C6001FCF4A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7427EE6D262898C6001FCF4A /* Model.swift */; };
 		7427EE762628CFBD001FCF4A /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7427EE752628CFBB001FCF4A /* ProgressController.swift */; };
 		7427EE7D2628D03C001FCF4A /* PreviousWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7427EE7A2628D03B001FCF4A /* PreviousWorkout.swift */; };
 		7427EE7E2628D03C001FCF4A /* Colorcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7427EE7B2628D03B001FCF4A /* Colorcode.swift */; };
@@ -54,7 +54,7 @@
 		7427EE4D262682CC001FCF4A /* SchreduleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchreduleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7427EE51262682CC001FCF4A /* SchreduleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchreduleUITests.swift; sourceTree = "<group>"; };
 		7427EE53262682CC001FCF4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7427EE6D262898C6001FCF4A /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		7427EE6D262898C6001FCF4A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		7427EE752628CFBB001FCF4A /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		7427EE7A2628D03B001FCF4A /* PreviousWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreviousWorkout.swift; path = "../../../Mobile computing/Schredule/Schredule/PreviousWorkout.swift"; sourceTree = "<group>"; };
 		7427EE7B2628D03B001FCF4A /* Colorcode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colorcode.swift; path = "../../../Mobile computing/Schredule/Schredule/Colorcode.swift"; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 				7427EE2F262682C6001FCF4A /* AppDelegate.swift */,
 				7427EE752628CFBB001FCF4A /* ProgressController.swift */,
 				7427EE31262682C6001FCF4A /* SceneDelegate.swift */,
-				7427EE6D262898C6001FCF4A /* ModelController.swift */,
+				7427EE6D262898C6001FCF4A /* Model.swift */,
 				7427EE7B2628D03B001FCF4A /* Colorcode.swift */,
 				7427EE7C2628D03B001FCF4A /* MuscleList.swift */,
 				7427EE7A2628D03B001FCF4A /* PreviousWorkout.swift */,
@@ -276,7 +276,7 @@
 				7427EE7F2628D03C001FCF4A /* MuscleList.swift in Sources */,
 				7427EE762628CFBD001FCF4A /* ProgressController.swift in Sources */,
 				7427EE34262682C6001FCF4A /* ViewController.swift in Sources */,
-				7427EE6E262898C6001FCF4A /* ModelController.swift in Sources */,
+				7427EE6E262898C6001FCF4A /* Model.swift in Sources */,
 				7427EE30262682C6001FCF4A /* AppDelegate.swift in Sources */,
 				7427EE7E2628D03C001FCF4A /* Colorcode.swift in Sources */,
 				7427EE7D2628D03C001FCF4A /* PreviousWorkout.swift in Sources */,
