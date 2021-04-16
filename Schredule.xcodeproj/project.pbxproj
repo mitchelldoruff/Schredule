@@ -25,6 +25,8 @@
 		74E1E768262949AB00236F91 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E1E767262949AB00236F91 /* ExerciseViewController.swift */; };
 		74E1E770262949C600236F91 /* PreviousWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E1E76F262949C600236F91 /* PreviousWorkoutViewController.swift */; };
 		74E1E775262949D300236F91 /* DateOfWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E1E774262949D300236F91 /* DateOfWorkoutViewController.swift */; };
+		74E1E77A26294BBB00236F91 /* ExerciseProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E1E77926294BBB00236F91 /* ExerciseProgressViewController.swift */; };
+		74E1E77F26294C8100236F91 /* MuscleToExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E1E77E26294C8100236F91 /* MuscleToExerciseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		74E1E767262949AB00236F91 /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
 		74E1E76F262949C600236F91 /* PreviousWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousWorkoutViewController.swift; sourceTree = "<group>"; };
 		74E1E774262949D300236F91 /* DateOfWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateOfWorkoutViewController.swift; sourceTree = "<group>"; };
+		74E1E77926294BBB00236F91 /* ExerciseProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgressViewController.swift; sourceTree = "<group>"; };
+		74E1E77E26294C8100236F91 /* MuscleToExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleToExerciseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 				7427EE7A2628D03B001FCF4A /* PreviousWorkout.swift */,
 				7427EE33262682C6001FCF4A /* ViewController.swift */,
 				7427EE35262682C6001FCF4A /* Main.storyboard */,
+				74E1E77E26294C8100236F91 /* MuscleToExerciseViewController.swift */,
+				74E1E77926294BBB00236F91 /* ExerciseProgressViewController.swift */,
 				74E1E75D2629496C00236F91 /* MuscleViewController.swift */,
 				74E1E7622629499200236F91 /* HomepageViewController.swift */,
 				74E1E767262949AB00236F91 /* ExerciseViewController.swift */,
@@ -293,6 +299,7 @@
 				74E1E768262949AB00236F91 /* ExerciseViewController.swift in Sources */,
 				7427EE762628CFBD001FCF4A /* ProgressViewController.swift in Sources */,
 				7427EE34262682C6001FCF4A /* ViewController.swift in Sources */,
+				74E1E77F26294C8100236F91 /* MuscleToExerciseViewController.swift in Sources */,
 				74E1E770262949C600236F91 /* PreviousWorkoutViewController.swift in Sources */,
 				74E1E7632629499200236F91 /* HomepageViewController.swift in Sources */,
 				7427EE6E262898C6001FCF4A /* Model.swift in Sources */,
@@ -301,6 +308,7 @@
 				7427EE7D2628D03C001FCF4A /* PreviousWorkout.swift in Sources */,
 				7427EE32262682C6001FCF4A /* SceneDelegate.swift in Sources */,
 				74E1E775262949D300236F91 /* DateOfWorkoutViewController.swift in Sources */,
+				74E1E77A26294BBB00236F91 /* ExerciseProgressViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

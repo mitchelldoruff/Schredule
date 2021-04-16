@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Homepage View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomepageViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +40,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <state key="normal" title="Previous Workouts"/>
                                 <connections>
-                                    <segue destination="0ah-CF-AJO" kind="push" id="6KY-vb-25s"/>
+                                    <segue destination="6Vg-6b-5xu" kind="push" id="fam-1D-Rp1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome User" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRa-IL-OTH">
@@ -105,45 +105,29 @@
             </objects>
             <point key="canvasLocation" x="2702.898550724638" y="85.714285714285708"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="EyX-f9-N7V">
+        <!--Muscle View Controller-->
+        <scene sceneID="ccL-Xx-Ll7">
             <objects>
-                <viewController id="0ah-CF-AJO" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kmB-p1-nJK">
+                <viewController id="cNm-4q-s7y" customClass="MuscleViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gx2-hv-UOA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Previous Workouts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNE-xQ-ihf">
-                                <rect key="frame" x="49" y="86" width="317" height="48"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Workouts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2e-RL-WdK">
+                                <rect key="frame" x="121" y="76" width="172" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="E5W-Al-ir6"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="kN2-3P-BMm"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tbn-8J-aXx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="967" y="860"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ccL-Xx-Ll7">
-            <objects>
-                <viewController id="cNm-4q-s7y" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="gx2-hv-UOA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Uhd-d8-j3n"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sbk-lC-xV5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="967" y="-684"/>
+            <point key="canvasLocation" x="966.66666666666674" y="-684.375"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="TFT-oS-dQY">
@@ -170,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="967" y="-684"/>
         </scene>
-        <!--View Controller-->
+        <!--Exercise Progress View Controller-->
         <scene sceneID="Zl5-f2-IB3">
             <objects>
-                <viewController id="7ep-SQ-gPR" sceneMemberID="viewController">
+                <viewController id="7ep-SQ-gPR" customClass="ExerciseProgressViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xqo-Dp-gqO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -194,10 +178,10 @@
             </objects>
             <point key="canvasLocation" x="2702.898550724638" y="85.714285714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Muscle To Exercise View Controller-->
         <scene sceneID="1Nr-dB-mKy">
             <objects>
-                <viewController id="Zb4-EG-EKb" sceneMemberID="viewController">
+                <viewController id="Zb4-EG-EKb" customClass="MuscleToExerciseViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iZK-09-GvJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -218,10 +202,10 @@
             </objects>
             <point key="canvasLocation" x="1812" y="-684"/>
         </scene>
-        <!--View Controller-->
+        <!--Exercise View Controller-->
         <scene sceneID="cjP-fp-HMM">
             <objects>
-                <viewController id="svJ-0L-sTW" sceneMemberID="viewController">
+                <viewController id="svJ-0L-sTW" customClass="ExerciseViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eNJ-na-sDd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -242,10 +226,10 @@
             </objects>
             <point key="canvasLocation" x="2666.666666666667" y="-684.375"/>
         </scene>
-        <!--View Controller-->
+        <!--Date Of Workout View Controller-->
         <scene sceneID="lhm-C3-eHi">
             <objects>
-                <viewController id="yku-LI-xMW" sceneMemberID="viewController">
+                <viewController id="yku-LI-xMW" customClass="DateOfWorkoutViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eg6-33-y3J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -255,22 +239,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pQX-1H-uth" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1793" y="860"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="IHP-zv-Rlr">
-            <objects>
-                <viewController id="rop-Px-dsu" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cat-fb-AOV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="qhg-Na-njp"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dsp-Lx-XAN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2686" y="860"/>
+            <point key="canvasLocation" x="1877" y="860"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Uut-Cb-cwV">
@@ -289,6 +258,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YuP-U6-xs7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="85.714285714285708"/>
+        </scene>
+        <!--Previous Workout View Controller-->
+        <scene sceneID="udR-eq-yXa">
+            <objects>
+                <viewController id="6Vg-6b-5xu" customClass="PreviousWorkoutViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WQS-2w-Uaw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RAU-gQ-7z0">
+                                <rect key="frame" x="23" y="170" width="371" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Previous Workouts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8J-tK-noh">
+                                <rect key="frame" x="50" y="88" width="317" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VCN-zg-458"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uor-cx-s12"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dy7-b9-fiT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1048" y="860"/>
         </scene>
     </scenes>
     <resources>
