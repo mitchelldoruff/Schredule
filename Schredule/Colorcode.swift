@@ -1,4 +1,4 @@
-
+/*
 enum Color{
   case red = "FF0000"
   case green = "00FF00"
@@ -14,3 +14,5 @@ getColor(recovery: Int)-> Color{
   }
   return .red;
 }
+*/
+

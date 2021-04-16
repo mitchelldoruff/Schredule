@@ -9,7 +9,10 @@ import UIKit
 
 class MuscleTableViewController: UITableViewController {
 
-    var muscleList : [String] = MuscleList.muscleGroup()
+    
+    var mL : MuscleList = MuscleList()
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +34,7 @@ class MuscleTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         if ( section == 0) {
-            return muscleList.count
+            return mL.muscleGroup.count
         }
         return 0
     }
@@ -39,7 +42,7 @@ class MuscleTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MuscleCell", for: indexPath)
-        let muscles = muscleList[ indexPath.row]
+        let muscles = mL.muscleGroup[ indexPath.row]
         cell.textLabel?.text = "\(muscles)"
         cell.detailTextLabel?.text = "\(muscles)"
         // Configure the cell...
