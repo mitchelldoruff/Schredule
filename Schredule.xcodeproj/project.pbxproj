@@ -20,6 +20,7 @@
 		7427EE7D2628D03C001FCF4A /* PreviousWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7427EE7A2628D03B001FCF4A /* PreviousWorkout.swift */; };
 		7427EE7E2628D03C001FCF4A /* Colorcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7427EE7B2628D03B001FCF4A /* Colorcode.swift */; };
 		7427EE7F2628D03C001FCF4A /* MuscleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7427EE7C2628D03B001FCF4A /* MuscleList.swift */; };
+		74E1E75E2629496C00236F91 /* MuscleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E1E75D2629496C00236F91 /* MuscleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		7427EE7A2628D03B001FCF4A /* PreviousWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PreviousWorkout.swift; path = "../../../Mobile computing/Schredule/Schredule/PreviousWorkout.swift"; sourceTree = "<group>"; };
 		7427EE7B2628D03B001FCF4A /* Colorcode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Colorcode.swift; path = "../../../Mobile computing/Schredule/Schredule/Colorcode.swift"; sourceTree = "<group>"; };
 		7427EE7C2628D03B001FCF4A /* MuscleList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MuscleList.swift; path = "../../../Mobile computing/Schredule/Schredule/MuscleList.swift"; sourceTree = "<group>"; };
+		74E1E75D2629496C00236F91 /* MuscleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				7427EE7A2628D03B001FCF4A /* PreviousWorkout.swift */,
 				7427EE33262682C6001FCF4A /* ViewController.swift */,
 				7427EE35262682C6001FCF4A /* Main.storyboard */,
+				74E1E75D2629496C00236F91 /* MuscleViewController.swift */,
 				7427EE38262682CC001FCF4A /* Assets.xcassets */,
 				7427EE3A262682CC001FCF4A /* LaunchScreen.storyboard */,
 				7427EE3D262682CC001FCF4A /* Info.plist */,
@@ -273,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74E1E75E2629496C00236F91 /* MuscleViewController.swift in Sources */,
 				7427EE7F2628D03C001FCF4A /* MuscleList.swift in Sources */,
 				7427EE762628CFBD001FCF4A /* ProgressController.swift in Sources */,
 				7427EE34262682C6001FCF4A /* ViewController.swift in Sources */,
