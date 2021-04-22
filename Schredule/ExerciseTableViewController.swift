@@ -54,4 +54,14 @@ class ExerciseTableViewController: MuscleTableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "ToUser", sender: indexPath.row)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? ExerciseViewController else {return}
+        let selectedRow = sender as? Int
+        
+        destination.exercise = thisList[selectedRow!]
+    }
+    
 }
