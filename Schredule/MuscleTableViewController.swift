@@ -12,7 +12,7 @@ class MuscleTableViewController: UITableViewController {
     
     var mL : MuscleList = MuscleList()
     
-    
+    var selected: [String] = ["Initial"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,14 +92,24 @@ class MuscleTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
-
+/*
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selects = mL.muscleGroup[ indexPath.row]
+        selected = mL.exerciseList(selects)
+        let cell = tableView.cellForRow(at: indexPath)
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        performSegue(withIdentifier: "mySegue", sender: cell)
+    }
 }
+
+
