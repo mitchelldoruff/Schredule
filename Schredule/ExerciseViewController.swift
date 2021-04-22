@@ -9,10 +9,22 @@ import UIKit
 
 class ExerciseViewController: UIViewController {
 
+    var exercise : String = ""
+    
+    
+    @IBOutlet weak var eLabel: UILabel!
+    func changeName() {
+        eLabel.text = exercise
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        changeName()
         // Do any additional setup after loading the view.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
     
 
