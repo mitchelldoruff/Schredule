@@ -12,7 +12,8 @@ class MuscleTableViewController: UITableViewController {
     
     var mL : MuscleList = MuscleList()
     
-    var selected: [String] = ["Initial"]
+    static var selected: [String] = ["Initial"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,9 +35,9 @@ class MuscleTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        print( "tableView numberOfRowsInSection: \(section)")
+        //print( "tableView numberOfRowsInSection: \(section)")
         if ( section == 0) {
-            print("Row Count \(mL.muscleGroup.count)")
+            //print("Row Count \(mL.muscleGroup.count)")
             return mL.muscleGroup.count
         }
         else {return 0}
@@ -44,11 +45,11 @@ class MuscleTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print( "tableview cellForRowAt: \(mL.muscleGroup[indexPath.row])")
+        //print( "tableview cellForRowAt: \(mL.muscleGroup[indexPath.row])")
         let cell = tableView.dequeueReusableCell(withIdentifier: "MuscleCell", for: indexPath)
         
         let muscles = mL.muscleGroup[ indexPath.row]
-        print("muscles \(muscles)")
+        //print("muscles \(muscles)")
         cell.textLabel?.text = "\(muscles)"
         cell.detailTextLabel?.text = "\(muscles)"
         // Configure the cell...
@@ -104,7 +105,7 @@ class MuscleTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selects = mL.muscleGroup[ indexPath.row]
-        selected = mL.exerciseList(selects)
+        MuscleTableViewController.selected = mL.exerciseList(selects)
         let cell = tableView.cellForRow(at: indexPath)
         tableView.deselectRow(at: indexPath, animated: true)
         
