@@ -12,10 +12,11 @@ class MuscleTableViewController: UITableViewController {
     
     var mL : MuscleList = MuscleList()
     
-    
+    var selected: [String] = ["Initial"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "MuscleCell")
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -33,16 +34,21 @@ class MuscleTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        print( "tableView numberOfRowsInSection: \(section)")
         if ( section == 0) {
+            print("Row Count \(mL.muscleGroup.count)")
             return mL.muscleGroup.count
         }
-        return 0
+        else {return 0}
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        print( "tableview cellForRowAt: \(mL.muscleGroup[indexPath.row])")
         let cell = tableView.dequeueReusableCell(withIdentifier: "MuscleCell", for: indexPath)
+        
         let muscles = mL.muscleGroup[ indexPath.row]
+        print("muscles \(muscles)")
         cell.textLabel?.text = "\(muscles)"
         cell.detailTextLabel?.text = "\(muscles)"
         // Configure the cell...
@@ -86,14 +92,24 @@ class MuscleTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
-
+/*
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selects = mL.muscleGroup[ indexPath.row]
+        selected = mL.exerciseList(selects)
+        let cell = tableView.cellForRow(at: indexPath)
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        performSegue(withIdentifier: "mySegue", sender: cell)
+    }
 }
+
+

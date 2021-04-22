@@ -132,7 +132,7 @@
         <!--Muscle To Exercise View Controller-->
         <scene sceneID="1Nr-dB-mKy">
             <objects>
-                <viewController id="Zb4-EG-EKb" customClass="MuscleToExerciseViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Zb4-EG-EKb" customClass="MuscleToExerciseViewController" customModule="Schredule" customModuleProvider="target" propertyAccessControl="none" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iZK-09-GvJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,14 +144,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Muscle Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pPZ-va-XbF">
+                                <rect key="frame" x="138" y="187" width="119" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WTc-nm-LMr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Ek1-h7-BoH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pYp-ZT-P02" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1812" y="-684"/>
+            <point key="canvasLocation" x="1811.594202898551" y="-684.375"/>
         </scene>
         <!--Exercise View Controller-->
         <scene sceneID="cjP-fp-HMM">
@@ -240,22 +248,32 @@
             </objects>
             <point key="canvasLocation" x="1048" y="860"/>
         </scene>
-        <!--Muscle Table View Controller-->
+        <!--muscles-->
         <scene sceneID="5Uz-Bw-VC8">
             <objects>
-                <tableViewController id="3gG-4m-ylK" customClass="MuscleTableViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="3gG-4m-ylK" userLabel="muscles" customClass="MuscleTableViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SZv-ex-7aI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="f6a-Mk-p3s">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="f6a-Mk-p3s" userLabel="MuscleCell">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f6a-Mk-p3s" id="DWA-Oc-Mwl">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M08-A2-uxS">
+                                            <rect key="frame" x="33" y="11" width="33" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="MuscleCell"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -263,7 +281,12 @@
                             <outlet property="delegate" destination="3gG-4m-ylK" id="gts-jb-Pzl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="jat-gw-CoH"/>
+                    <navigationItem key="navigationItem" title="Workouts" id="3Mp-cH-wEo" userLabel="muscles">
+                        <barButtonItem key="backBarButtonItem" title="muscles" id="mxF-a7-G4X" userLabel="muscles"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="Zb4-EG-EKb" kind="push" identifier="mySegue" id="sZM-cH-MeY"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6P-dN-Os6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
