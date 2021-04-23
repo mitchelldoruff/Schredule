@@ -16,8 +16,8 @@ class ExerciseViewController: UIViewController {
     func readPropertyList(){
              
         var format = PropertyListSerialization.PropertyListFormat.xml //format of the property list
-        var plistData:[String:AnyObject] = [:]  //our data
         let plistPath:String? = Bundle.main.path(forResource: "data", ofType: "plist")! //the path of the data
+        var plistData:[String:AnyObject] = [:]  //our data
         let plistXML = FileManager.default.contents(atPath: plistPath!) //the data in XML format
             do{ //convert the data to a dictionary and handle errors.
                 plistData = try PropertyListSerialization.propertyList(from: plistXML!, format: &format) as! [String:AnyObject]
@@ -71,26 +71,28 @@ class ExerciseViewController: UIViewController {
         getWeightInput()
         ///////////////////////////////////////////////Insert code to store in prev workouts/////////////////////
         saveToList = ( "Sets: \(setInput), Reps: \(repInput),  Weight: \(weightInput)")
+        
         print("\(saveToList)")
         
-        exerciseList.append(saveToList);
+        exerciseList.append(saveToList)
         
         writePropertyList(exerciseList)
         
     }
     
+    
     func writePropertyList(_ listToSave: [String]) {
-        let encoder = PropertyListEncoder()
-        encoder.outputFormat = .xml
-
-        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("data.plist")
-
-        do {
-            let data = try encoder.encode(exerciseList)
-            try data.write(to: path)
-        } catch {
-            print(error)
+        let plistPath:String? = Bundle.main.path(forResource: "data", ofType: "plist")!
+        
+        if FileManager.default.fileExists(atPath: plistPath!) {
+            let data = NSMutableDictionary(contentsOfFile: plistPath!)!
+            data.setValue(listToSave, forKey: exercise)
+            data.write(toFile: plistPath!, atomically: true)
         }
+        
+        setField.text = ""
+        repField.text = ""
+        weightField.text = ""
     }
     
     
