@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Incline Curl</key>
+	<array>
+		<string>Sets: 5, Reps: 4, Weight: 9</string>
+		<string>Sets: 10, Reps: 9, Weight: 25</string>
+		<string>Sets: 10, Reps: 15, Weight: 25</string>
+	</array>
+	<key>Bicep dumbell Curl</key>
+	<array>
+		<string>Sets: 5, Reps: 4, Weight: 9</string>
+		<string>Sets: 10, Reps: 10, Weight: 20</string>
+		<string>Sets: 20, Reps: 30, Weight: 20</string>
+	</array>
+	<key>Strict Bicep bar curl</key>
+	<array>
+		<string>Sets: 5, Reps: 4, Weight: 9</string>
+		<string>Sets: 8, Reps: 6, Weight: 20</string>
+		<string>Sets: 10, Reps: 10, Weight: 20</string>
+	</array>
+</dict>
+</plist>
