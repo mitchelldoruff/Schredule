@@ -64,6 +64,17 @@ class PreviousWorkoutTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "ToUser", sender: indexPath.row)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? DateOfWorkoutTableViewController else {return}
+        let selectedRow = sender as? Int
+        
+        destination.date = self.date
+        
+    }
 
     /*
     // Override to support conditional editing of the table view.
