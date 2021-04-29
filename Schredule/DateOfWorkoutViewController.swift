@@ -12,10 +12,10 @@ class DateOfWorkoutTableViewController: UITableViewController {
     var date : String = "";
     var exerciseList : [String] = [];
     // NEED TO BE FIXED
-    
+
     @IBOutlet weak var eLabel: UILabel!
     func changeName() {
-//        eLabel.text = date
+        eLabel.text = date
     }
     
     func readPropertyList(){
