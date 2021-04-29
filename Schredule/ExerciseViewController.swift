@@ -10,7 +10,24 @@ import UIKit
 class ExerciseViewController: UIViewController {
 
     var exercise : String = ""
+    var exerciseList: [String] = [""];
+    var saveToList: String = "";
     
+    func readPropertyList(){
+             
+        var format = PropertyListSerialization.PropertyListFormat.xml //format of the property list
+        let plistPath:String? = Bundle.main.path(forResource: "data", ofType: "plist")! //the path of the data
+        var plistData:[String:AnyObject] = [:]  //our data
+        let plistXML = FileManager.default.contents(atPath: plistPath!) //the data in XML format
+            do{ //convert the data to a dictionary and handle errors.
+                plistData = try PropertyListSerialization.propertyList(from: plistXML!, format: &format) as! [String:AnyObject]
+                 
+                exerciseList = plistData[exercise] as! [String]
+            }
+            catch{ // error condition
+                print("Error reading plist: \(error), format: \(format)")
+            }
+    }
     
     @IBOutlet weak var eLabel: UILabel!
     func changeName() {
@@ -52,14 +69,37 @@ class ExerciseViewController: UIViewController {
         getSetInput()
         getRepInput()
         getWeightInput()
-        print("sets: \(setInput) Reps: \(repInput)  Weight: \(weightInput)")
         ///////////////////////////////////////////////Insert code to store in prev workouts/////////////////////
+        saveToList = ( "Sets: \(setInput), Reps: \(repInput),  Weight: \(weightInput)")
+        
+        print("\(saveToList)")
+        
+        exerciseList.append(saveToList)
+        
+        writePropertyList(exerciseList)
+        
+    }
+    
+    
+    func writePropertyList(_ listToSave: [String]) {
+        let plistPath:String? = Bundle.main.path(forResource: "data", ofType: "plist")!
+        
+        if FileManager.default.fileExists(atPath: plistPath!) {
+            let data = NSMutableDictionary(contentsOfFile: plistPath!)!
+            data.setValue(listToSave, forKey: exercise)
+            data.write(toFile: plistPath!, atomically: true)
+        }
+        
+        setField.text = ""
+        repField.text = ""
+        weightField.text = ""
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         changeName()
+        readPropertyList()
         // Do any additional setup after loading the view.
     }
     

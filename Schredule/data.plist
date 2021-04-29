@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Lat Pull Down</key>
+	<array/>
+	<key>Machine High Row</key>
+	<array/>
+	<key>Seated Machine Row</key>
+	<array/>
+	<key>Plate Walk</key>
+	<array/>
+	<key>Pull up</key>
+	<array/>
+	<key>Wrist Curl</key>
+	<array/>
+	<key>Lever</key>
+	<array/>
+	<key>Cable Crunch</key>
+	<array/>
+	<key>Hanging leg raise</key>
+	<array/>
+	<key>Lateral Dumbell Raise</key>
+	<array/>
+	<key>Seated Shoulder Press</key>
+	<array/>
+	<key>Standing Dumbell Shoulder Press</key>
+	<array/>
+	<key>Dumbell Shrug</key>
+	<array/>
+	<key>Barbell Shrug</key>
+	<array/>
+	<key>Upright Row</key>
+	<array/>
+	<key>Rack Pull</key>
+	<array/>
+	<key>Straight Bar Push Down</key>
+	<array/>
+	<key>Dumbell Pull Over</key>
+	<array/>
+	<key>Straight Leg Calf Extension</key>
+	<array/>
+	<key>Standing Calf Raise</key>
+	<array/>
+	<key>Seated Calf raise</key>
+	<array/>
+	<key>Leg extension</key>
+	<array/>
+	<key>Leg Press</key>
+	<array/>
+	<key>Squat</key>
+	<array/>
+	<key>Romanian Deadlift</key>
+	<array/>
+	<key>Hamstring Curl</key>
+	<array/>
+	<key>Deadlift</key>
+	<array/>
+	<key>Incline Dumbell Press</key>
+	<array/>
+	<key>Cable Flies</key>
+	<array/>
+	<key>Bench Press</key>
+	<array/>
+	<key>Tricep single dumbell extension</key>
+	<array/>
+	<key>Tricep Pulldown</key>
+	<array/>
+	<key>Dip</key>
+	<array/>
+	<key>Incline Curl</key>
+	<array>
+		<string>Sets: 5, Reps: 4, Weight: 9</string>
+		<string>Sets: 10, Reps: 9, Weight: 25</string>
+		<string>Sets: 10, Reps: 15, Weight: 25</string>
+	</array>
+	<key>Bicep dumbell Curl</key>
+	<array>
+		<string>Sets: 5, Reps: 4, Weight: 9</string>
+		<string>Sets: 10, Reps: 10, Weight: 20</string>
+		<string>Sets: 20, Reps: 30, Weight: 20</string>
+	</array>
+	<key>Strict Bicep bar curl</key>
+	<array>
+		<string>Sets: 5, Reps: 4, Weight: 9</string>
+		<string>Sets: 8, Reps: 6, Weight: 20</string>
+		<string>Sets: 10, Reps: 10, Weight: 20</string>
+	</array>
+</dict>
+</plist>
