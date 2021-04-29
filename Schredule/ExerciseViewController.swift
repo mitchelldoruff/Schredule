@@ -25,7 +25,7 @@ class ExerciseViewController: UIViewController {
             do{ //convert the data to a dictionary and handle errors.
                 plistData = try PropertyListSerialization.propertyList(from: plistXML!, format: &format) as! [String:AnyObject]
                 
-                if (plistData.
+                //if (plistData.
                 datesList = plistData[date] as! [String]
             }
             catch{ // error condition
