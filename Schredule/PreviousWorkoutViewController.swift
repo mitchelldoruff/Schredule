@@ -11,6 +11,7 @@ class PreviousWorkoutTableViewController: UITableViewController {
     
     var plistData : [String: AnyObject] = [:];
     var date = "";
+    var dateList : [String] = [""];
     // NEED TO BE FIXED
 
     
@@ -29,9 +30,11 @@ class PreviousWorkoutTableViewController: UITableViewController {
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "MuscleCell")
-        readPropertyList()
+        super.viewDidLoad();
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "MuscleCell");
+        readPropertyList();
+        dateList = Array(plistData.keys);
+        dateList.sort();
         
     }
     
@@ -48,7 +51,7 @@ class PreviousWorkoutTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return plistData.count
+        return dateList.count
     }
 
     
@@ -56,7 +59,7 @@ class PreviousWorkoutTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MuscleCell", for: indexPath)
 
         // Configure the cell...
-        let dates = Array(plistData)[indexPath.row].key
+        let dates = dateList[indexPath.row]
         
         cell.textLabel?.text = "\(dates)"
         cell.detailTextLabel?.text = "\(dates)"
@@ -71,6 +74,7 @@ class PreviousWorkoutTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destination = segue.destination as? DateOfWorkoutTableViewController else {return}
         let selectedRow = sender as? Int
+        date = dateList[selectedRow!]
         
         destination.date = self.date
         
