@@ -2,21 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>04/29/2021</key>
+	<key>4/27/21</key>
 	<array/>
-	<key>04/28/2021</key>
+	<key>4/26/21</key>
 	<array/>
-	<key>04/27/2021</key>
-	<array/>
-	<key>04/26/2021</key>
-	<array/>
-	<key>04/25/2021</key>
+	<key>4/25/21</key>
 	<array>
-		<string>Lat Pull Down \n Sets: 3 Reps: 10 Weight: 160</string>
-		<string>Machine High Row \n Sets: 5 Reps: 8 Weight: 140</string>
-		<string>Pull Up \n Sets: 3 Reps: 30 Weight: 160</string>
-		<string>Lat Pull Down \n Sets: 3 Reps: 10 Weight: 160</string>
-		<string>Lat Pull Down \n Sets: 3 Reps: 10 Weight: 160</string>
+		<string>Lat Pull Down Sets: 3 Reps: 10 Weight: 160</string>
+		<string>Machine High Row Sets: 5 Reps: 8 Weight: 140</string>
+		<string>Pull Up Sets: 3 Reps: 30 Weight: 160</string>
+		<string>Lat Pull Down Sets: 3 Reps: 10 Weight: 160</string>
+		<string>Lat Pull Down  Sets: 3 Reps: 10 Weight: 160</string>
 	</array>
 </dict>
 </plist>
