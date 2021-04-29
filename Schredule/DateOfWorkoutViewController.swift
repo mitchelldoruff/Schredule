@@ -15,7 +15,7 @@ class DateOfWorkoutTableViewController: UITableViewController {
     
     @IBOutlet weak var eLabel: UILabel!
     func changeName() {
-        eLabel.text = date
+//        eLabel.text = date
     }
     
     func readPropertyList(){
@@ -26,7 +26,7 @@ class DateOfWorkoutTableViewController: UITableViewController {
         let plistXML = FileManager.default.contents(atPath: plistPath!) //the data in XML format
             do{ //convert the data to a dictionary and handle errors.
                 plistData = try PropertyListSerialization.propertyList(from: plistXML!, format: &format) as! [String:AnyObject]
-                 
+                
                 exerciseList = plistData[date] as! [String]
             }
             catch{ // error condition
@@ -55,6 +55,8 @@ class DateOfWorkoutTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        print(date)
+        print(exerciseList)
         return exerciseList.count;
     }
 
