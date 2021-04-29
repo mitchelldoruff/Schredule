@@ -399,10 +399,10 @@
             </objects>
             <point key="canvasLocation" x="3504" y="86"/>
         </scene>
-        <!--muscles-->
+        <!--Previous Workout-->
         <scene sceneID="vBP-B6-Pzp">
             <objects>
-                <tableViewController title="Previous Workout" id="QqG-FE-zwr" userLabel="muscles" sceneMemberID="viewController">
+                <tableViewController title="Previous Workout" id="QqG-FE-zwr" userLabel="Previous Workout" customClass="PreviousWorkoutTableViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GMd-RD-jSo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -435,15 +435,18 @@
                     <navigationItem key="navigationItem" title="Workouts" id="RJT-uG-F8a" userLabel="muscles">
                         <barButtonItem key="backBarButtonItem" title="muscles" id="k2a-md-nXa" userLabel="muscles"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="1X6-QF-zkS" kind="push" identifier="ToUser" id="BYh-au-S0R"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vkV-ZS-9z3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1048" y="846"/>
         </scene>
-        <!--muscles-->
+        <!--Date Of Workout-->
         <scene sceneID="ctl-PZ-nmq">
             <objects>
-                <tableViewController title="Previous Workout Exercise" id="1X6-QF-zkS" userLabel="muscles" sceneMemberID="viewController">
+                <tableViewController title="Previous Workout Exercise" id="1X6-QF-zkS" userLabel="Date Of Workout" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1cH-yq-dgK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
