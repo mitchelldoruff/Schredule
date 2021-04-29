@@ -13,6 +13,26 @@ class ExerciseViewController: UIViewController {
     var exerciseList: [String] = [""];
     var saveToList: String = "";
     
+    var date : String = "";
+    var datesList : [String] = [""];
+    
+    func readDatesPropertyList(){
+             
+        var format = PropertyListSerialization.PropertyListFormat.xml //format of the property list
+        let plistPath:String? = Bundle.main.path(forResource: "dates", ofType: "plist")! //the path of the data
+        var plistData:[String:AnyObject] = [:]  //our data
+        let plistXML = FileManager.default.contents(atPath: plistPath!) //the data in XML format
+            do{ //convert the data to a dictionary and handle errors.
+                plistData = try PropertyListSerialization.propertyList(from: plistXML!, format: &format) as! [String:AnyObject]
+                
+                if (plistData.
+                datesList = plistData[date] as! [String]
+            }
+            catch{ // error condition
+                print("Error reading plist: \(error), format: \(format)")
+            }
+    }
+    
     func readPropertyList(){
              
         var format = PropertyListSerialization.PropertyListFormat.xml //format of the property list
