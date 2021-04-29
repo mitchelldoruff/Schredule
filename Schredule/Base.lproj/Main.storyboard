@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomepageViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbr-xu-VVi">
@@ -61,7 +61,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="Iy6-EA-oed"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,7 +74,7 @@
             <objects>
                 <tableViewController title="Progress" id="8YR-KS-1TO" customClass="MuscleTableViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oZi-n0-98s">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -113,7 +115,7 @@
             <objects>
                 <tableViewController title="Exercise" id="dxL-Sa-HJf" customClass="ProgressExerciseTableViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Yox-zx-d8Q">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -149,12 +151,12 @@
             </objects>
             <point key="canvasLocation" x="2667" y="86"/>
         </scene>
-        <!--Exercise View Controller-->
+        <!--Progess-->
         <scene sceneID="cjP-fp-HMM">
             <objects>
                 <viewController id="svJ-0L-sTW" customClass="ExerciseViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eNJ-na-sDd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exercises" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Xe-yK-JW2">
@@ -238,7 +240,13 @@
                         <viewLayoutGuide key="safeArea" id="u6G-hD-zW1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4wR-70-l0r"/>
+                    <navigationItem key="navigationItem" title="Progess" id="q58-e2-3X2">
+                        <barButtonItem key="rightBarButtonItem" title="Home" id="ih4-rP-JP9">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="push" id="ILe-tP-Xcl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="eLabel" destination="bIb-gT-hUh" id="u9f-fu-EIu"/>
                         <outlet property="repField" destination="DER-ee-TKa" id="z7U-Ta-bcU"/>
@@ -273,7 +281,7 @@
             <objects>
                 <tableViewController id="3gG-4m-ylK" userLabel="muscles" customClass="MuscleTableViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SZv-ex-7aI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -317,7 +325,7 @@
             <objects>
                 <tableViewController id="D4N-OA-JCg" userLabel="muscles" customClass="ExerciseTableViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="80W-WB-zW8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -362,7 +370,7 @@
             <objects>
                 <tableViewController id="V4g-GI-VrF" customClass="ExerciseDataTableViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aLR-LO-0dI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ecw-bu-5Gb" userLabel="eLabel">
@@ -397,7 +405,13 @@
                             <outlet property="delegate" destination="V4g-GI-VrF" id="cQD-RR-EpD"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Progess" id="t8x-VO-IBy"/>
+                    <navigationItem key="navigationItem" title="Progess" id="t8x-VO-IBy">
+                        <barButtonItem key="rightBarButtonItem" title="Home" id="Ddh-bS-lZN">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="push" id="d4y-Ku-r1R"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="eLabel" destination="ecw-bu-5Gb" id="oYl-4u-gMP"/>
                     </connections>
@@ -411,7 +425,7 @@
             <objects>
                 <tableViewController title="Previous Workout" id="QqG-FE-zwr" userLabel="Previous Workout" customClass="PreviousWorkoutTableViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GMd-RD-jSo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -455,7 +469,7 @@
             <objects>
                 <tableViewController title="Previous Workout Exercise" id="1X6-QF-zkS" userLabel="Date Of Workout" customClass="DateOfWorkoutTableViewController" customModule="Schredule" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="1cH-yq-dgK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zxk-8h-Ur7" userLabel="eLabel">
@@ -493,6 +507,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Previous Workouts" id="Vji-ee-mY9" userLabel="muscles">
                         <barButtonItem key="backBarButtonItem" title="muscles" id="6GR-gl-Xep" userLabel="muscles"/>
+                        <barButtonItem key="rightBarButtonItem" title="Home" id="XIr-5L-pjz">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="push" id="ChF-Wv-voP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="eLabel" destination="zxk-8h-Ur7" id="EFF-kt-ux5"/>
@@ -505,6 +524,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="eQW-s7-9sY"/>
+        <segue reference="ChF-Wv-voP"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
